@@ -31,17 +31,20 @@ This project was developed in several stages, including:
 6. Configuration of Telegram notifications for alarm alerts.
 
 ## Execution
-To run this project, follow the detailed steps in the [complete documentation](link_to_documentation) available in this repository.
+To run this project, follow the detailed steps in the [complete documentation](https://github.com/GelsonFilho/IoT-CyberSec-Thingsboard-ESP32/blob/main/FinalReport/Trabalho_IoT_Filipe_Gelson.pdf) available in this repository.
 
 ## Project Components
-### Certificates: [Keys](link)
-### Rule Chains and Dashboard exported from Thingsboard: [Exported](link)
-### Docker Configuration: [Docker](link)
-### Simulated Python Version: [SimulatedCase](link)
-### Real Version with ESP32+DHT11: [RealCase](link)
-### Official Project Document (in Portuguese): [Final Report](link)
-### Circuit of the real version: ![Example Circuit](link_to_image)
-### Project Presentation Video (in Portuguese): [YouTube Video](link_to_youtube_video)
+### Rule Chains and Dashboard exported from Thingsboard: [Json exported](Exported)
+### Docker Configuration: [Docker compose](Docker)
+### Certificates: [Keys](Keys)
+### Simulated Python Version: [Simulated Case](SimulatedCase)
+### Real Version with ESP32+DHT11: [Real Case](RealCase)
+### Official Project Document (in Portuguese): [Final Report](FinalReport)
+### Circuit of the real version: 
+![Eletronic Circuit](Assets/circuito.png)
+### Project Presentation Video (in Portuguese): 
+[![Watch the video](Assets/miniaturavideo.png)](https://youtu.be/oYIJ8lEayHc?si=OJoyGk801WhdtWh9)
+
 
 ## Credits
 - [Thingsboard Documentation](https://thingsboard.io/docs/): Documentation of the open-source IoT Platform used in this project.
@@ -50,4 +53,4 @@ To run this project, follow the detailed steps in the [complete documentation](l
 
 ---
 
-**Note**: This README is a summarized version of the project. Refer to the [complete documentation](link_to_documentation) for detailed information and installation instructions.
+**Note**: This README is a summarized version of the project. Refer to the [complete documentation](https://github.com/GelsonFilho/IoT-CyberSec-Thingsboard-ESP32/blob/main/FinalReport/Trabalho_IoT_Filipe_Gelson.pdf) for detailed information and installation instructions.
