@@ -1,0 +1,26 @@
+version: '3.0'
+services:
+  mytb:
+    restart: always
+    image: "thingsboard/tb-postgres"
+    ports:
+      - "8080:9090"
+      - "8883:8883"
+      - "7070:7070"
+      - "5683-5688:5683-5688/udp"
+    environment:
+      TB_QUEUE_TYPE: in-memory
+      SSL_ENABLED: "true"
+      SSL_CREDENTIALS_TYPE: PEM
+      SSL_PEM_CERT: /config/httpserver_cert.pem
+      SSL_PEM_KEY: /config/httpserver_key.pem
+      SSL_PEM_KEY_PASSWORD:
+      MQTT_SSL_ENABLED: "true"
+      MQTT_SSL_CREDENTIALS_TYPE: PEM
+      MQTT_SSL_PEM_CERT: /config/mqttserver_cert.pem
+      MQTT_SSL_PEM_KEY: /config/mqttserver_key.pem
+      MQTT_SSL_PEM_KEY_PASSWORD:
+    volumes:
+      - ~/.mytb-data:/data
+      - ~/.mytb-logs:/var/log/thingsboard
+      - ~/.mytb-cert:/config
